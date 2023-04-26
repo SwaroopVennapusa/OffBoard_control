@@ -40,7 +40,7 @@ class DroneController:
             rospy.logerr('Failed to initialize service')       
         self.arming_client = rospy.ServiceProxy('/mavros/cmd/arming', CommandBool)
         self.set_mode_client = rospy.ServiceProxy('/mavros/set_mode', SetMode)
-        self.rate = rospy.Rate(5)
+        self.rate = rospy.Rate(20)
         while (not rospy.is_shutdown()) and (self.current_state):
             rospy.spin()
             self.rate.sleep()
