@@ -20,11 +20,17 @@ This repo is the implementation of offboard control for https://github.com/Open-
 # Implementation
 
 - In one terminal, launch the world.
-` roslaunch cps_challenge_2020 phase-1.launch `
+
+```roslaunch cps_challenge_2020 phase-1.launch ```
+
 - In another terminal run the node to control the drone.
-` rosrun offboard_py offb_vel.py `
+
+``` rosrun offboard_py offb_vel.py ```
+
 - In another terminal run ORB-SLAM2
-` rosrun ORB_SLAM2 Mono /root/ORB_SLAM2/Vocabulary/ORBvoc.txt /root/ORB_SLAM2/Examples/Monocular/myDrone.yaml `
+
+``` rosrun ORB_SLAM2 Mono /root/ORB_SLAM2/Vocabulary/ORBvoc.txt /root/ORB_SLAM2/Examples/Monocular/myDrone.yaml ```
+
 - Running rqt is optional but we can check the downward facing camera to check the probe while data muling and also access forward facing camera while orbiting the rock
 
 # Final Output
