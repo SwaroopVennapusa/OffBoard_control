@@ -1,6 +1,6 @@
 # OffBoard_control
 
-This github is the implementation of offboard control for https://github.com/Open-UAV/cps_challenge_2020
+This repo is the implementation of offboard control for https://github.com/Open-UAV/cps_challenge_2020
 
 # Objective
 
